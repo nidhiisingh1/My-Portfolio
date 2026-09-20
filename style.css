@@ -1,0 +1,334 @@
+
+body{
+    margin:0;
+    background-color: bisque;
+}
+
+
+#navbar{
+    position:fixed;
+    top:0;
+    padding-right: 40px;
+    width:100%;
+    z-index: 1000;
+    min-height: 60px;
+    color:white;
+    background-color: rgb(8, 8, 65);
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   padding :0 40px;
+   
+   
+}
+
+#details  {
+    
+    display:flex;
+    margin:0;
+    padding:0 60px;
+    justify-content: flex-end;
+    list-style: none;
+    gap:20px;
+}
+
+#name{
+    
+font-size: 18px;
+} 
+
+#image{
+    color:white;
+    background-color:rgb(27, 27, 99);
+    min-height: 250px;
+    margin-top:  50px;
+    padding:20px 40px;
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap:40px;
+    
+}
+
+#home-text{
+    flex:1;
+}
+
+#home-text h2,
+#home-text h1,
+#home-text h4,
+#home-text p{
+    margin : 8px 0;
+}
+
+#home-text h1 {
+    color:rgb(193, 31, 85);
+    font-size :32px;
+}
+#image img{
+    width:300px;
+    height:220px;
+    object-fit:cover;
+} 
+
+/* ====Button===== */
+
+button{
+     margin-top: 15px;
+     padding: 8px 15px;
+    background-color: rgb(223, 110, 129);  
+    border:none;
+}
+
+button a{
+    color:black;
+    text-decoration: none;
+} 
+
+
+
+.me{
+    min-height: 180px;
+    display:flex;
+    
+     align-items: center;
+    gap:10px; 
+}
+
+.my-img{
+    flex-shrink: 0;
+    height:100px;
+    width: 100px;
+    border:1px solid black;
+    border-radius: 50%;
+    background-color: pink;
+    background-image:url("/img.folder/1.png");
+    background-size:cover;
+    background-position: center;
+    
+}
+
+
+#about p {
+    line-height: 1.5;
+    max-width:500px;
+}
+
+#intro{
+    border-left: 1px solid gray;
+    padding-left: 30px;
+    margin-left:10%; ;
+}
+    
+#about button{
+margin-top: 20px;
+background-color: rgb(223, 110, 129)
+}
+
+.skill h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.skill{
+   margin-top:0;
+   min-height:150px;
+   background-color:rgb(245, 211, 216);
+   
+} 
+
+
+#all{
+   height:90px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#q h2{
+    text-align: center;
+    font-size : 40px;
+    margin-top: 0;
+    
+}
+
+#qualification{
+    display:flex;
+    justify-content: space-around;
+}
+
+#q{
+    min-height: 150px;
+    margin-top:0;
+    background-color: rgb(208, 202, 214);
+}
+
+#project h2{
+    text-align: center;
+    font-size : 40px;
+    margin-top: 0;
+}
+
+#project{
+    min-height: 180px;
+    padding:15px 20px;
+    background-color: rgb(181, 181, 255);
+}
+
+#proj3{
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    gap: 20px;
+  
+}
+
+#p1,
+#p2,
+#p3{
+    background-color: white;
+    flex:1; 
+     min-width: 0px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    
+    align-items: center;
+    gap: 15px;
+    margin: 15px; 
+    
+}
+
+#p1 img,
+#p2 img,
+#p3 img{
+    flex-shrink: 0;
+    height: 80px;
+    width: 60px;
+    object-fit: cover;
+    margin:0;
+}
+
+#p1 >div,
+#p2 >div,
+#p3 >div{
+    min-width: 0;
+    font-weight: bold;
+    
+}
+
+#p1 p,
+#p2 p,
+#p3 p{
+  
+    margin:8px 0 0 0;
+    font-weight: normal;
+    line-height: 1.4;
+    /* overflow-wrap: break-word; */
+} 
+
+#c{
+    text-align: center;
+}
+
+#allcontact{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#contact{
+   min-height: 150px;
+   gap:10px;
+    border-bottom: 1px solid grey;
+}
+
+footer{
+    color:white;
+    height:auto;
+    background-color: rgb(27, 27, 199);
+    text-align: center;
+    padding: 10px;
+} 
+
+
+
+#contact{
+   min-height: 150px;
+    border-bottom: 1px solid grey;
+}
+
+footer{
+    color:white;
+    height:auto;
+    background-color: rgb(27, 27, 199);
+    text-align: center;
+    padding: 10px;
+} 
+
+@media(max-width:600px){
+
+#name{
+    font-size: 12px;
+}
+
+    #details{
+        font-size:10px;
+        gap: 10px;
+        margin-left: 0;
+    }
+    #image img{
+        min-width:0;
+        min-height:0; 
+    }
+
+    .me{
+        flex-direction: column;
+        align-items:flex-start;
+       
+    }
+
+    .my-img  {
+        margin: 5px 10px;
+        
+    }
+    #about{
+        line-height: 0.5;
+       margin-left: 20px; 
+       margin-top: 3px;
+    }
+
+   
+    #all img{
+        width:80px;
+        height: 60px;
+    }
+
+     #first,
+     #second,
+     #third{
+        background-color: white;
+        border-radius: 5px;
+        border-left: 1px solid rgb(8, 8, 8);
+        padding:5px;
+        margin-bottom: 15px ;
+     }
+
+     #proj3{
+        flex-direction: column;
+     }
+
+     #allcontact{
+        flex-direction: column;
+        margin-left: 40px;
+        margin-bottom:40px;
+     }
+
+
+
+}
+
+
