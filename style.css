@@ -102,7 +102,7 @@ button a{
     border:1px solid black;
     border-radius: 50%;
     background-color: pink;
-    background-image:url("/img.folder/1.png");
+    background-image:url("img.folder/1.png");
     background-size:cover;
     background-position: center;
     
